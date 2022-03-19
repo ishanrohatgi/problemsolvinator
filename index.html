@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+       body{
+           background-color: blueviolet;
+           display: flex;
+           align-items: center;
+           height: 100vh;
+
+           justify-content: center;
+       }
+     .mainContainer{
+         background-color: beige;
+         height:45vh;
+         width: 40vw;
+         border-radius: 10px;
+         display: grid;
+         align-items:start;    
+     }
+     .Heading{
+         text-align: center;
+         
+     }
+     .form{
+    
+         text-align: center;
+     }
+     input{
+         border-radius: 5px;
+         height: 20px;
+         width: 35vw;
+         margin: 20px;
+     }
+     .image{
+         grid-template-columns: auto;
+         justify-content: center;
+         align-items: center;
+         display: none;
+       
+     }
+     .image>img{
+         height: 100px;
+         margin-left: 32%;
+        
+     }
+    
+    @media screen and (max-width:400px){
+        .mainContainer{
+            width: 80vw;
+        
+        }
+       input{
+           width: 80%;
+       }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+      <div class="Heading">
+          <h1>Life mein Problem Hai?</h1>
+          <h2>yahan solution hai</h2>
+      </div>
+      <div class="form">
+        <label for="ques">Enter Your Problem</label>
+        <input id="ques" type="text" name="ques" >
+        <div class="submit" onclick="myFunc()">
+         <button>Solution</button>
+        </div>
+        </div>
+        <div class="image">
+
+            <img src="sleep.png" alt="">
+            <h4>Sab Moh Maya Hai!, Have a good Sleep</h4>
+        </div>
+    
+    </div>
+</body>
+</html>
